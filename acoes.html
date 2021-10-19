@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ação</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/botao.css">
+        <link rel="stylesheet" href="css/records.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <script src="acoes.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="header-title">Ação</h1>
+        </header>
+        <main>
+            <div>
+                <button type="button" class="button blue mobile" onclick="location.href='index.html';">Voltar</button>
+                <button type="button" class="button blue mobile" id="cadastrarAcoes">Criar</button>
+            </div>
+            <table id="tabelaAcoes" class="records">
+                <thead>
+                    <tr>
+                        <th>Ativo</th>
+                        <th>Nome</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <h2>Criar</h2>
+                        <span class="modal-close" id="modalClose">&#10006;</span>
+                    </header>
+                    <form id="form" class="modal-form">
+                        <div>
+                            <input type="checkbox" id="ativo" class="modal-box">
+                            <label>Ativo</label>
+                            </div>
+                        <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Preencher Nome" required>
+                    </form>
+                    <footer class="modal-footer">
+                        <button id="salvar" class="button green">Salvar</button>
+                        <button id="cancelar" class="button blue">Cancelar</button>
+                    </footer>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
